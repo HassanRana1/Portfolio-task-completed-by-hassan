@@ -1,0 +1,252 @@
+/* Resetting browser default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #121212; /* Dark background color for the entire page */
+    color: #ffffff; /* White text color for the entire page */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header styles */
+header {
+    background-color: transparent !important; /* Ensure the header background is transparent */
+    position: fixed; /* Position the header fixed */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensure the header is above other elements */
+}
+
+.nav-pills .nav-link {
+    color: red !important; /* Ensure nav link color is red */
+    padding: 5px 10px; /* Add padding for better appearance */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    margin: 0 5px; /* Add margin for spacing between links */
+    border: 1px solid transparent; /* Transparent border by default */
+    background-color: transparent; /* Ensure the background color is transparent */
+    font-weight: bold !important; /* Ensure links are bold */
+    font-size: 18px;
+}
+
+.nav-pills .nav-link.active {
+    border: 1px solid white; /* Add white border to the active link */
+    background-color: transparent; /* Ensure the background color is transparent */
+}
+
+.nav-pills .nav-link:hover {
+    color: #ccc !important; /* Change link color on hover */
+    border: 1px solid #ccc; /* Change border color on hover */
+}
+
+.nav-pills .nav-link:focus, .nav-pills .nav-link:active {
+    outline: none; /* Remove default outline */
+    box-shadow: none; /* Remove default box-shadow */
+    background-color: transparent !important; /* Ensure the background color remains transparent */
+}
+
+/* Top container styles */
+
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+  }
+  
+.top-container {
+    background-image: url("./key.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative; /* Ensure the top-container is positioned correctly */
+    padding-top: 80px; /* To avoid content overlapping with fixed header */
+}
+
+.title-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Middle container styles */
+.middle-container {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #000000; /* Dark background color for the middle container */
+    color: #ffffff; /* White text color */
+    box-sizing: border-box; /* Ensure padding doesn't add to the width */
+}
+
+.profile .me {
+    width: 20%; /* Adjust width and height to create a circular shape */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire circle */
+    display: block; /* Ensures image behaves correctly as a block element */
+    margin-bottom: 15px; /* Optional: Adds space below the image */
+}
+
+.coding {
+    margin-top: 50px;
+}
+
+.programmer {
+    width: 50%;
+}
+
+.hot-wings {
+    margin-top: 50px;
+}
+
+.chilli-img {
+    width: 50%;
+}
+
+.profile, .skills, .contact-me {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.profile img, .typing img, .chillies img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile h2, .skills h2, .contact-me h2, .contact-me h3 {
+    margin-top: 20px;
+}
+
+.intro, .coding p, .hot-wings p, .contact-message {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.typing, .coding, .chillies, .hot-wings {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+hr {
+    width: 80%;
+    margin: 20px 0;
+    border-color: #000000; /* Dark border color */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #c00;
+}
+
+footer {
+    background-color: black;
+    color: white; /* Set text color to contrast with black background */
+    padding: 20px; /* Adjust padding as needed to ensure content fits properly */
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between; /* Align links at both ends */
+}
+
+.footer-link {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 20px; /* Adjust spacing between links */
+}
+
+.spacer {
+    flex-grow: 1; /* Fill remaining space */
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: #333333; /* Dark background color for the form */
+    color: #ffffff; /* White text color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow for depth */
+}
+
+.contact-form .form-label {
+    color: #ffffff; /* White text color for labels */
+}
+
+.contact-form .form-control {
+    background-color: #555555; /* Dark background color for inputs */
+    color: #ffffff; /* White text color for inputs */
+    border-color: #555555; /* Dark border color */
+}
+
+.contact-form textarea.form-control {
+    resize: none; /* Prevent resizing of textarea */
+}
+
+.contact-form .btn-primary {
+    background-color: #ff5555; /* Red button color */
+    border-color: #ff5555; /* Red border color */
+    color: #ffffff; /* White text color */
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #c00; /* Darker red on hover */
+    border-color: #c00;
+}
+
+/* Card Styles */
+.card {
+    background-color: #333333; /* Dark background color for cards */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default card border */
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.card-title {
+    color: #ffffff; /* White text color for card titles */
+}
+
+.card-text {
+    color: #cccccc; /* Lighter text color for card descriptions */
+}
+
+.card .btn-primary {
+    background-color: #ff5555; /* Red button color */
+    border-color: #ff5555; /* Red border color */
+    color: #ffffff; /* White text color */
+}
+
+.card .btn-primary:hover {
+    background-color: #c00; /* Darker red on hover */
+    border-color: #c00;
+}
